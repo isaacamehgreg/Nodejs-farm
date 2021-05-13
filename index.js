@@ -74,4 +74,4 @@ const server=http.createServer((req,res)=>{
          res.end('<h1>page not found</h1>');
      }
  });
-server.listen(8000,'localhost',()=>{console.log('listening to request');});
+server.listen(process.env.PORT || 8000,'localhost',()=>{console.log('listening to request');});
